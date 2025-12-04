@@ -11,4 +11,4 @@ Spatiotemporal spiking dynamics in macaque V1 Layer 4A/B (16mm² cortical patch)
 
 From my master's thesis on biologically realistic orientation map stabilization in visual cortex.
 
-[Full thesis](Masterarbeit_final.pdf)" > README.md
+[Full thesis](Masterarbeit_final.pdf) > README.md
