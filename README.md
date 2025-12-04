@@ -41,7 +41,7 @@ Built a biologically-constrained 1M-neuron spiking neural network to understand 
 **Challenge:** Can the network decode orientation from heavily degraded signals?
 
 <p align="center">
-  <img src="results/noise_42lgn_rates.png" width="600">
+  <img src="results/noise_lgn_rates.png" width="600">
   <br>
   <em>Noisy thalamic input (Signal to noise ratio 0.5) — a much harder decoding challenge</em>
 </p>
