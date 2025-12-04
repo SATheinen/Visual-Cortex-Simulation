@@ -26,7 +26,7 @@ Built a biologically-constrained 1M-neuron spiking neural network to understand 
 ## 📊 Results Visualization
 
 **Above animation shows:**
-- **Top row:** Population firing rates across 16mm² cortical patch (1ms temporal resolution)  
+- **Top row:** Population firing rates across 25mm² (16mm² displayed) cortical patch (1ms temporal resolution)  
 - **Middle row:** Thalamic input patterns from retina model  
 - **Bottom row:** Individual neuron spike trains showing coordinated activity
 
@@ -46,16 +46,17 @@ Built a biologically-constrained 1M-neuron spiking neural network to understand 
 - **Leaky Integrate-and-Fire neurons** (conductance-based)
 - **Exponentially decaying spatial connectivity** (distance-dependent)
 - **Orientation-specific connectivity patterns** (patchy long-range, push-pull short-range)
+- **Two types of Inhibitory neurons** (ultra-shortrange, elliptical-axons)
 - **Realistic synaptic delays** (distance + conduction velocity)
 
 ### Input Model
 - **Retina preprocessing** using center-surround receptive fields (Mexican hat filters)
-- **ON/OFF pathways** mimicking biological thalamic separation
+- **ON/OFF pathways** mimicking biological thalamic ON and OFF cells
 - **Gabor-based thalamocortical projections** creating orientation selectivity
-- **Visual stimuli:** Moving gratings, bars, and dashed patterns
-
+- **Visual stimuli:** Moving gratings, bars, dashed bars and noisy versions dashed bars
+  
 ### Key Innovation
-**No backpropagation or gradient descent** — network learns topology through biologically-plausible Hebbian-inspired connectivity rules, demonstrating that biological constraints alone can produce robust computation.
+**No backpropagation or gradient descent** — network topology inspired by biologically-plausible Hebbian-like connectivity rules, demonstrating that biological constraints alone can produce robust computation.
 
 ---
 
@@ -78,15 +79,14 @@ This work is directly relevant to:
 - **Language:** Python 3.8+
 - **HPC:** SLURM job scheduling on compute clusters
 - **Libraries:** NumPy, Matplotlib, SciPy
-- **Data:** ~500GB per full simulation run
 
 ---
 
 ## 📈 Key Findings
 
-1. **Noise Resistance:** Network maintained orientation selectivity under 50%+ noise levels
+1. **Noise Resistance:** Network maintained orientation selectivity even when presenting dashed bars with high noise levels
 2. **Emergent Dynamics:** Spatiotemporal waves arose from local connectivity without central coordination
-3. **Population Coding:** Orientation decoded from ~100 neurons with >80% accuracy
+3. **Population Coding:** Orientation decoded from ~10000 neurons with >85% accuracy
 4. **Biological Validity:** Activity patterns matched experimental recordings from macaque V1
 
 ---
@@ -105,17 +105,7 @@ This work is directly relevant to:
 
 **Master's Thesis Project**  
 Forschungszentrum Jülich (IAS-6 Computational and Systems Neuroscience) & RWTH Aachen University  
-Grade: 1.6 (Good) | Oct 2021 – Mar 2024
-
-**Supervisors:** [Add if appropriate]
-
----
-
-## 🔗 Related Work
-
-Interested in this work? Check out:
-- [Time-Series Transformer](https://github.com/SATheinen/attention-stock-predictor) — Temporal prediction with attention mechanisms
-- [CNN Segmentation](https://github.com/SATheinen/cloud-type-recognition) — Computer vision for image analysis
+Grade: 1.0 (Best) | Nov 2022 – Mar 2024
 
 ---
 
@@ -148,7 +138,3 @@ If you find this work useful, please cite:
 ## 🙏 Acknowledgments
 
 This work was conducted at the Institute for Advanced Simulation (IAS-6) at Forschungszentrum Jülich, using their HPC infrastructure. Special thanks to the NEST development team for their excellent simulation toolkit.
-
----
-
-*Note: Due to the computational scale (1M+ neurons, 1B+ synapses), full simulation code requires HPC resources. Contact me for details on running or adapting this model.*
