@@ -146,7 +146,7 @@ This work directly applies to:
 - Showed emergent spatiotemporal dynamics from local connectivity
 
 **Institution:** Forschungszentrum Jülich (IAS-6 Computational and Systems Neuroscience) & RWTH Aachen University  
-**Grade:** 1.0 (Good) | **Period:** Nov 2022 – Mar 2024
+**Grade:** 1.0 (Best) | **Period:** Nov 2022 – Mar 2024
 
 ---
 
