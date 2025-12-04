@@ -1,9 +1,14 @@
 # Visual-Cortex-Simulation
 Showcase of my results from my Master Thesis
 
-![Cortical Wave Animation](grating_new.mp4)
+https://github.com/user-attachments/assets/4621f4d8-24ea-4be4-8c88-06da8ebe0d7c
 
-Spatiotemporal neural dynamics in macaque visual cortex (Layer 4A/B, 16mm²). 
-Shows population-level spiking waves emerging from retina-processed thalamic signals.
+Spatiotemporal spiking dynamics in macaque V1 Layer 4A/B (16mm² cortical patch).
 
-From my master's thesis on biologically realistic edge detection in V1.
+**Top row:** Population-level activity (1ms bins) showing emergent spiking waves  
+**Middle row:** Thalamic input from retina preprocessing  
+**Bottom row:** Individual neuron spike trains
+
+From my master's thesis on biologically realistic orientation map stabilization in visual cortex.
+
+[Full thesis](link-to-thesis-if-available)" > README.md
