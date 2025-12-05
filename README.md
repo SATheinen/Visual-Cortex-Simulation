@@ -125,7 +125,7 @@ This work directly applies to:
 - **HPC:** SLURM job scheduling on compute clusters
 - **Analysis:** NumPy, SciPy, Matplotlib
 - **Data Scale:** ~500GB per full simulation run
-- **Compute:** Multi-node HPC (100+ cores typical)
+- **Compute:** Multi-node HPC (128+ cores typical)
 
 ---
 
